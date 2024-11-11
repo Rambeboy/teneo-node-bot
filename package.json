@@ -1,0 +1,38 @@
+{
+  "name": "teneo-node-extension-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "TRWA Bot is a powerful tool designed for you to automate TRWA Testnet airdrop.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --no-warnings start.js",
+    "setup": "node --no-warnings setup.js",
+    "dev": "node --no-warnings index.js",
+    "build": "rm -rf app && javascript-obfuscator --config build-config.json",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "teneo",
+    "teneo-node-extension-bot",
+    "teneo-node",
+    "teneo-extension",
+    "rambeboy"
+  ],
+  "author": "Rambeboy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rambeboy/teneo-node-bot.git.git"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "https-proxy-agent": "^7.0.5",
+    "input": "^1.0.1",
+    "moment-timezone": "^0.5.45",
+    "node-fetch": "^3.3.2",
+    "socks-proxy-agent": "^8.0.4",
+    "twisters": "^1.1.0",
+    "winston": "^3.13.0",
+    "ws": "^8.18.0"
+  }
+}
