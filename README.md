@@ -2,6 +2,8 @@
 
 ![TRWA](assets/img1.jpg)
 
+This bot is designed to manage two-way communications quickly and efficiently, enabling real-time messaging via WebSocket, as well as monitoring and ensuring service connectivity by pinging through an HTTP Proxy.
+
 ---
 
 ## Prerequisite
