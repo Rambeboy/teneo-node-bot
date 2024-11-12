@@ -32,9 +32,9 @@ New Airdrops: Teneo Node Ektension
 - Login / Create Account
 
 - Enter Refferal Code :
-```bash
-KFqtX
-```
+  ```bash
+  KFqtX
+  ```
 - Verify Email
 
 - Run Nodes Ektension 
