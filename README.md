@@ -50,7 +50,7 @@ KFqtX
 
 1. Clone project repository
    ```
-   git clone https://github.com/Rambeboy/teneoxd.git && cd teneoxd
+   git clone https://github.com/Rambeboy/teneo-node-bot.git && cd teneo-node-bot
    ```
 2. Install dependencies
    ```
@@ -81,7 +81,7 @@ KFqtX
 
 2. Clone project repository
    ```
-   git clone https://github.com/Rambeboy/teneoxd.git && cd teneoxd
+   git clone https://github.com/Rambeboy/teneo-node-bot.git && cd teneo-node-bot
    ```
 3. Install dependencies
    ```
