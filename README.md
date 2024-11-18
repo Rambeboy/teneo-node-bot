@@ -6,7 +6,7 @@ This bot is designed to manage two-way communications quickly and efficiently, e
 
 ---
 
-## Prerequisite
+## PREREQUISITE
 
 - Git
 - Node JS (v22)
@@ -30,31 +30,23 @@ New Airdrops: Teneo Node Ektension
 - Download Extension : [Download](https://chromewebstore.google.com/detail/teneo-community-node/emcclcoaglgcpoognfiggmhnhgabppkm)
 
 - Install Extension
-
 - Login / Create Account
-
-- Enter Refferal Code :
-  ```bash
-  KFqtX
-  ```
+- Enter Referral Code : `KFqtX`
 - Verify Email
-
-- Run Nodes Ektension 
-
-- LFG
-
+- Run Nodes Ektension
+- Done
 
 ---
 
-## Setup & Configure BOT
+## SETUP & CONFIGURE BOT
 
-### Linux
+### LINUX
 
 1. Clone project repository
    ```
    git clone https://github.com/Rambeboy/teneo-node-bot.git && cd teneo-node-bot
    ```
-2. Install dependencies
+2. Install Dependencies and Setup Bot
    ```
    npm install && npm run setup
    ```
@@ -77,7 +69,7 @@ New Airdrops: Teneo Node Ektension
    
 ---
 
-### Windows
+### WINDOWS
 
 1. Open your `Command Prompt` or `Power Shell`.
 
@@ -85,17 +77,26 @@ New Airdrops: Teneo Node Ektension
    ```
    git clone https://github.com/Rambeboy/teneo-node-bot.git && cd teneo-node-bot
    ```
-3. Install dependencies
+
+3. Install Dependencies and Setup Bot
    ```
    npm install && npm run setup
    ```
+
 5. Navigate to `teneo-node-bot` directory. 
+
 6. Navigate to `accounts` folder and rename `accounts_tmp.js` to `accounts.js`.
+
 7. Now open `acccounts.js` and setup your accounts.
+
 8. Navigate to `config` and adjust the `config.js` as needed.
+
 9. Also Configure proxy if you want to use proxy, by open `proxy_list.js`. (if you have 5 accounts, proxy is required)
+
 10. Back to `teneo-node-bot` directory.
+
 11. To start the app open your `Command Prompt` or `Power Shell`
+
 12. Run Bot
     ```
     npm run start
@@ -103,10 +104,10 @@ New Airdrops: Teneo Node Ektension
 
 ---
 
-## Update Bot
+## UPDATE BOT
 
 To update bot follow this step :
-1. run
+1. Run
    ```
    git pull
    ```
@@ -118,18 +119,16 @@ To update bot follow this step :
    ```
    git stash && git pull
    ```
-2. run
+2. Run
    ```
    npm update
    ```
-2. start the bot
+2. Start the bot
 
 
 ---
 
 ## IMPORTANT NOTE (READ IT THIS IS NOT DECORATION)
-
-DWYOR
 
 How can I get Teneo Points?
 Reward distribution varies based on your contribution. You can collect Teneo Points through connecting your Node or inviting new people to our network. The points are distributed as the following:
@@ -155,7 +154,7 @@ Teneo Using Web Socket, so make sure you only run 1 accounts session, example if
 
 ---
 
-## License
+## LICENSE
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
