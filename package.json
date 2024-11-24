@@ -5,8 +5,8 @@
   "description": "TRWA Bot is a powerful tool designed for you to automate TRWA Testnet airdrop.",
   "main": "index.js",
   "scripts": {
-    "start": "node --no-warnings app/start.js",
-    "setup": "node --no-warnings app/setup.js",
+    "start": "node --no-warnings start.js",
+    "setup": "node --no-warnings setup.js",
     "dev": "node --no-warnings index.js",
     "build": "rm -rf app && javascript-obfuscator --config build-config.json",
     "test": "node test.js"
