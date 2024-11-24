@@ -1,1 +1,34 @@
-const _0x2b8ac9=_0x2874;(function(_0x48ab9b,_0x437403){const _0x2f961c=_0x2874,_0x404f68=_0x48ab9b();while(!![]){try{const _0x88299e=-parseInt(_0x2f961c(0x177))/0x1*(-parseInt(_0x2f961c(0x176))/0x2)+-parseInt(_0x2f961c(0x187))/0x3*(-parseInt(_0x2f961c(0x186))/0x4)+-parseInt(_0x2f961c(0x184))/0x5+parseInt(_0x2f961c(0x178))/0x6+parseInt(_0x2f961c(0x18c))/0x7+-parseInt(_0x2f961c(0x189))/0x8+-parseInt(_0x2f961c(0x17d))/0x9;if(_0x88299e===_0x437403)break;else _0x404f68['push'](_0x404f68['shift']());}catch(_0x354313){_0x404f68['push'](_0x404f68['shift']());}}}(_0x4dd7,0xe37de));import _0x1c1c3d from'fs';function _0x2874(_0x44e6d0,_0x592f4e){const _0x4dd792=_0x4dd7();return _0x2874=function(_0x28744f,_0x1f8526){_0x28744f=_0x28744f-0x175;let _0xdf12d0=_0x4dd792[_0x28744f];return _0xdf12d0;},_0x2874(_0x44e6d0,_0x592f4e);}import _0x2e06e1 from'path';async function copyFolder(_0x3ce0c4,_0xa64b4){const _0x16cb63=_0x2874;try{await _0x1c1c3d[_0x16cb63(0x18b)]['mkdir'](_0xa64b4,{'recursive':!![]});const _0x5b5848=await _0x1c1c3d[_0x16cb63(0x18b)][_0x16cb63(0x18d)](_0x3ce0c4,{'withFileTypes':!![]});for(let _0x148aa4 of _0x5b5848){const _0xd85c69=_0x2e06e1['join'](_0x3ce0c4,_0x148aa4[_0x16cb63(0x175)]),_0x34ba57=_0x2e06e1['join'](_0xa64b4,_0x148aa4[_0x16cb63(0x175)]);_0x148aa4[_0x16cb63(0x179)]()?await copyFolder(_0xd85c69,_0x34ba57):await _0x1c1c3d['promises']['copyFile'](_0xd85c69,_0x34ba57);}console[_0x16cb63(0x17c)](_0x16cb63(0x17f)+_0x3ce0c4+'\x20to\x20'+_0xa64b4);}catch(_0x5bc70b){console[_0x16cb63(0x185)](_0x16cb63(0x17b)+_0x3ce0c4+_0x16cb63(0x180)+_0xa64b4+':',_0x5bc70b);}}const accountsSrc=_0x2e06e1['join'](process[_0x2b8ac9(0x18a)](),_0x2b8ac9(0x17a)),configSrc=_0x2e06e1[_0x2b8ac9(0x182)](process[_0x2b8ac9(0x18a)](),_0x2b8ac9(0x183)),accountsDest=_0x2e06e1[_0x2b8ac9(0x182)](process['cwd'](),_0x2b8ac9(0x188),_0x2b8ac9(0x17a)),configDest=_0x2e06e1[_0x2b8ac9(0x182)](process[_0x2b8ac9(0x18a)](),_0x2b8ac9(0x188),_0x2b8ac9(0x183));((async()=>{const _0x4e79a7=_0x2b8ac9;await copyFolder(accountsSrc,accountsDest),await copyFolder(configSrc,configDest),console[_0x4e79a7(0x17c)](_0x4e79a7(0x17e)),await import(_0x4e79a7(0x181));})());function _0x4dd7(){const _0x4bd4c5=['isDirectory','accounts','Error\x20copying\x20folder\x20from\x20','log','16023924dyfkwo','Starting\x20the\x20app...','Copied\x20','\x20to\x20','./app/index.js','join','config','1289945mHWiZc','error','404nXkItA','34971fPrqdA','app','7401768lIgxrz','cwd','promises','1796340yNmUtZ','readdir','name','2428044aaQEvV','1nDvjyt','7484718KvsMia'];_0x4dd7=function(){return _0x4bd4c5;};return _0x4dd7();}
+import _0x1c1c3d from 'fs';
+import _0x2e06e1 from 'path';
+async function copyFolder(_0x3ce0c4, _0xa64b4) {
+  try {
+    await _0x1c1c3d.promises.mkdir(_0xa64b4, {
+      'recursive': true
+    });
+    const _0x5b5848 = await _0x1c1c3d.promises.readdir(_0x3ce0c4, {
+      'withFileTypes': true
+    });
+    for (let _0x148aa4 of _0x5b5848) {
+      const _0xd85c69 = _0x2e06e1.join(_0x3ce0c4, _0x148aa4.name);
+      const _0x34ba57 = _0x2e06e1.join(_0xa64b4, _0x148aa4.name);
+      if (_0x148aa4.isDirectory()) {
+        await copyFolder(_0xd85c69, _0x34ba57);
+      } else {
+        await _0x1c1c3d.promises.copyFile(_0xd85c69, _0x34ba57);
+      }
+    }
+    console.log("Copied " + _0x3ce0c4 + " to " + _0xa64b4);
+  } catch (_0x5bc70b) {
+    console.error("Error copying folder from " + _0x3ce0c4 + " to " + _0xa64b4 + ':', _0x5bc70b);
+  }
+}
+const accountsSrc = _0x2e06e1.join(process.cwd(), "accounts");
+const configSrc = _0x2e06e1.join(process.cwd(), "config");
+const accountsDest = _0x2e06e1.join(process.cwd(), "app", "accounts");
+const configDest = _0x2e06e1.join(process.cwd(), "app", "config");
+(async () => {
+  await copyFolder(accountsSrc, accountsDest);
+  await copyFolder(configSrc, configDest);
+  console.log("Starting the app...");
+  await import("./app/index.js");
+})();
