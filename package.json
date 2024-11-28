@@ -2,7 +2,7 @@
   "name": "teneo-node-extension-bot",
   "version": "1.0.0",
   "type": "module",
-  "description": "TRWA Bot is a powerful tool designed for you to automate TRWA Testnet airdrop.",
+  "description": "Teneo-Extension-Node-Bot-Automated-Node-Interaction",
   "main": "index.js",
   "scripts": {
     "start": "node --no-warnings start.js",
