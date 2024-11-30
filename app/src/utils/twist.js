@@ -23,7 +23,7 @@ export class Twist {
     const _0x31e58c = _0x11373f.user_metadata ? _0x11373f.user_metadata.invited_by : '-';
     let _0xac0cab = {
       'msg': _0x5dad2e,
-      'delay' : _0x1bb0a8,
+      'delay': _0x1bb0a8,
       'email': _0x21a9df,
       'id': _0x131cc8,
       'pointsToday': _0x37ecb7,
@@ -33,12 +33,12 @@ export class Twist {
     let _0x3ad16b;
     _0x3ad16b = "\n================== Account " + (_0x4818c2 + 0x1) + " =================\n" + Helper.spinnerContent(_0xac0cab) + "\n==============================================\n";
     this.twisters.put(_0x15670d, {
-      'text': _0x3ad16b
+      'text' : _0x3ad16b
     });
   }
   ['info'](_0x16aa1b = '') {
     this.twisters.put(0x2, {
-      'text': "\n==============================================\nInfo : " + _0x16aa1b + "\n=============================================="
+      'text' : "\n==============================================\nInfo  : " + _0x16aa1b + "\n=============================================="
     });
     return;
   }
