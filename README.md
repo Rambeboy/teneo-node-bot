@@ -50,19 +50,23 @@ New Airdrops: Teneo Node Ektension
    ```
    npm install && npm run setup
    ```
-3. Configure your accounts
+3. Copy all file
+   ```
+   cp -r accounts/accounts_tmp.js accounts/accounts.js && cp -r config/config_tmp.js config/config.js && cp -r config/proxy_list_tmp.js config/proxy_list.js
+   ```
+4. Configure your accounts
    ```
    nano accounts/accounts.js
    ```
-4. Configure the bot config
+5. Configure the bot config
    ```
    nano config/config.js
    ```
-5. Configure the proxy
+6. Configure the proxy
    ```
    nano config/proxy_list.js
    ```
-6. Run Bot
+7. Run Bot
    ```
    npm run start
    ```
