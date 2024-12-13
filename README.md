@@ -145,8 +145,8 @@ Points per Heartbeat
 Max Points per Day
 2,400
 
-*Points are credited when the invitee has 10 successful heartbeats.
-**Each hour consists of 4 heartbeats that evaluate if your Node is connected and successfully running. Please note that the points model can change at any time.
+Points are credited when the invitee has 10 successful heartbeats.
+Each hour consists of 4 heartbeats that evaluate if your Node is connected and successfully running. Please note that the points model can change at any time.
 
 Teneo Using Web Socket, so make sure you only run 1 accounts session, example if you run bot using account A, dont run account A on your browser extension.
 
@@ -156,6 +156,6 @@ Teneo Using Web Socket, so make sure you only run 1 accounts session, example if
 
 ## LICENSE
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
 
 ---
