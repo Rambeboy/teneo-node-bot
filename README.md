@@ -1,4 +1,4 @@
-### TENEO EXTENSION NODE BOT
+## TENEO EXTENSION NODE BOT
 
 ![TRWA](assets/img1.jpg)
 
@@ -50,23 +50,19 @@ New Airdrops: Teneo Node Ektension
    ```
    npm install && npm run setup
    ```
-3. Copy all file
-   ```
-   cp -r accounts/accounts_tmp.js accounts/accounts.js && cp -r config/config_tmp.js config/config.js && cp -r config/proxy_list_tmp.js config/proxy_list.js
-   ```
-4. Configure your accounts
+3. Configure your accounts
    ```
    nano accounts/accounts.js
    ```
-5. Configure the bot config
+4. Configure the bot config
    ```
    nano config/config.js
    ```
-6. Configure the proxy
+5. Configure the proxy
    ```
    nano config/proxy_list.js
    ```
-7. Run Bot
+6. Run the Bot
    ```
    npm run start
    ```
@@ -101,7 +97,7 @@ New Airdrops: Teneo Node Ektension
 
 11. To start the app open your `Command Prompt` or `Power Shell`
 
-12. Run Bot
+12. Run the Bot
     ```
     npm run start
     ```
