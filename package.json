@@ -5,8 +5,8 @@
   "description": "Teneo-Extension-Node-Bot-Automated-Node-Interaction",
   "main": "index.js",
   "scripts": {
-    "start": "node --no-warnings scripts/start.js",
-    "setup": "node --no-warnings scripts/setup.js",
+    "start": "node scripts/start.js",
+    "setup": "node scripts/setup.js",
     "dev": "node --no-warnings index.js",
     "build": "rm -rf app && javascript-obfuscator --config build-config.json",
     "test": "node test.js"
